@@ -1,0 +1,26 @@
+<% f = File.open("/Users/david/LocalRepository/testing-artifacts/results.trx", "rb")
+contents = f.read
+
+test_results = []
+contents.scan(/(testName=")(\w+)(")(.*)(outcome=")(\w+)/i) {
+    | unwanted00, test_name, unwanted02, unwanted03, unwanted04, result | test_results << [test_name, result]
+} %>
+
+<h1><b>Test Restuls</b></h1>
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th><i>Test Name</i></th>
+      <th><i>Test Result</i></th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <% test_results.each do |line| %>
+      <tr>
+        <td><%= line[0] %></td>
+        <td><%= line[1] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
