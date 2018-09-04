@@ -48,9 +48,9 @@ public final class TesterWidget extends AbstractRubyTemplate implements RubyRail
     @Override
     protected String getTemplatePath()
     {
-        // return "/edu/montana/gsoc/msusel/sonar/techlink/tester_results.html.erb";
+        return "/edu/montana/gsoc/msusel/sonar/techlink/tester_results.html.erb";
         // use full path for development mode
-        return "/Users/david/LocalRepository/MSUSEL/msusel-techlink-plugin/src/main/resources/edu/montana/gsoc/msusel/sonar/techlink/tester_results.html.erb";
+        // return "/Users/david/LocalRepository/MSUSEL/msusel-techlink-plugin/src/main/resources/edu/montana/gsoc/msusel/sonar/techlink/tester_results.html.erb";
     }
 
     /**

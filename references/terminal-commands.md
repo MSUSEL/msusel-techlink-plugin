@@ -12,12 +12,3 @@
         1. `return "/Users/david/LocalRepository/MSUSEL/msusel-techlink-plugin/src/main/resources/edu/montana/gsoc/msusel/sonar/techlink/tester_results.html.erb";`
     2. Package plugin to SonarQube plugins folder
     3. Restart server. Ruby changes on the fly will now display.
-
-<%= f = File.open("/Users/david/LocalRepository/testing-artifacts/simple.trx", "rb")
-contents = f.read
-
-test_results = []
-contents.scan(/(<xs:documentation>)(.*)(<\/xs:documentation>)/i) {
-    | open_tag, text, close_tag | test_results << text
-} 
-test_results.each do | text | %>
