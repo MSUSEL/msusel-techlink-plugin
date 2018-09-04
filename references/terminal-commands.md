@@ -12,3 +12,8 @@
         1. `return "/Users/david/LocalRepository/MSUSEL/msusel-techlink-plugin/src/main/resources/edu/montana/gsoc/msusel/sonar/techlink/tester_results.html.erb";`
     2. Package plugin to SonarQube plugins folder
     3. Restart server. Ruby changes on the fly will now display.
+
+### SonarQube
+- **Run SonarQube Scanner (not TFS plugin way)**
+    1. Assuming a *sonar-project.properties* file exists in the root directory of the project
+        - Run `sonar-scanner` from that directory
