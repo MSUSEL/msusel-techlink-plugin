@@ -3,7 +3,11 @@ SonarQube plugin containing all extensions and widgets relevant to TechLink
 
 *CURRENTLY UNDER EARLY CONSTRUTION. Readme updates coming soon*
 
+<<<<<<< HEAD
 ## Helpful Terminal Commands
+=======
+## Useful Terminal Commands
+>>>>>>> d964c7deec69bcdb9aa85d3163f86468638ea710
 ### Maven
 - **Build and copy to plugins folder**
     1. `mvn clean package`
