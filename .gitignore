@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/java,ruby,maven,macos,rails,sonarqube
+# Created by https://www.gitignore.io/api/java,ruby,maven,macos,rails,sonarqube,visualstudiocode
 
 ### Java ###
 # Compiled class file
@@ -177,5 +177,11 @@ build-iPhoneSimulator/
 # SonarLint working directories, configuration files (including credentials)
 .sonarlint/
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# End of https://www.gitignore.io/api/java,ruby,maven,macos,rails,sonarqube
+# End of https://www.gitignore.io/api/java,ruby,maven,macos,rails,sonarqube,visualstudiocode
