@@ -1,14 +1,13 @@
 <% 
 require 'open-uri'
 
-f = File.open("~/results.trx", "rb")
+f = File.open("/Users/david/results.trx", "rb")
 contents = f.read
 
 test_results = []
 contents.scan(/(testName=")(\w+)(")(.*)(outcome=")(\w+)/i) {
     | unwanted00, test_name, unwanted02, unwanted03, unwanted04, result | test_results << [test_name, result]
 } 
- 
 %>
 
 <h1><b>Test Restuls</b></h1>

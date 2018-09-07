@@ -39,7 +39,7 @@ public final class TesterWidget extends AbstractRubyTemplate implements RubyRail
     @Override
     public String getId()
     {
-        return "my_widget";
+        return "tester_widget";
     }
 
     /**
@@ -59,6 +59,6 @@ public final class TesterWidget extends AbstractRubyTemplate implements RubyRail
     @Override
     public String getTitle()
     {
-        return "My Widget";
+        return "TESTER Suite Results Widget";
     }
 }
